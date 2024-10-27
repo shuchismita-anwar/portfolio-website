@@ -1,27 +1,30 @@
 "use client";
 
-import ProjectCard from '@/components/ProjectCard';
-import { Projects } from '@/constants';
-import React from 'react';
+interface Props {
+  title: string;
+  text: string;
+  link: string;
+  image?: string; // Make image optional
+}
 
-const Page = () => (
-  <div
-    style={{ backgroundImage: "url(/mountains.jpg)" }}
-    className="w-screen h-screen flex items-center justify-center bg-center bg-cover"
-  >
-    {/* Main scrollable grid container */}
-    <div className="scroll-container max-w-[85%] max-h-[80%] overflow-y-auto grid grid-cols-1 sm:grid-cols-2 gap-8 p-4 mx-auto">
-      {Projects.map((project, index) => (
-        <ProjectCard
-          key={index}
-          image={project.image}  // Assuming you have image paths in the `Projects` array
-          title={project.title}
-          text={project.text}
-          link={project.link}  // Pass link here
-        />
-      ))}
+const ProjectCard = ({ title, text, link, image }: Props) => {
+  return (
+    <div className="project-card bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+      {image && (
+        <img src={image} alt={title} className="project-image w-full h-40 object-cover rounded-md mb-4" />
+      )}
+      <h3 className="text-2xl font-bold mb-2">{title}</h3>
+      <p className="text-gray-600 mb-4">{text}</p>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
+      >
+        Learn more
+      </a>
     </div>
-  </div>
-);
+  );
+};
 
-export default Page;
+export default ProjectCard;
