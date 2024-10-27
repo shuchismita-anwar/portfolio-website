@@ -2,7 +2,14 @@
 
 import React, { useState } from 'react';
 
-const ResearchCard = ({ title, text, details }) => {
+// Define the props type for ResearchCard
+interface ResearchCardProps {
+  title: string;
+  text: string;
+  details: string;
+}
+
+const ResearchCard = ({ title, text, details }: ResearchCardProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleReadMoreClick = () => {

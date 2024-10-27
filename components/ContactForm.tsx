@@ -5,9 +5,9 @@ import React, { useState } from "react";
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.target as HTMLFormElement; // Type assertion to HTMLFormElement
 
     const formData = new FormData(form);
     const response = await fetch("https://formspree.io/f/mqakeqgp", { // Your Formspree endpoint
