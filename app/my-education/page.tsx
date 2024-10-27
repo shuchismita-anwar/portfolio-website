@@ -35,7 +35,7 @@ const EducationPage = () => (
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
     style={{
-      backgroundImage: "url('/mountains.jpg')",
+      backgroundImage: "url('/Mountainss.jpg')", 
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}
