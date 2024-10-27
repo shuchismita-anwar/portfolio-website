@@ -6,7 +6,7 @@ import { Projects } from '@/constants';
 
 const Page = () => (
   <div
-    style={{ backgroundImage: "url(/mountains.jpg)" }}
+    style={{ backgroundImage: "url(/Mountains.jpg)" }}
     className="w-screen h-screen flex items-center justify-center bg-center bg-cover"
   >
     {/* Main scrollable grid container */}
