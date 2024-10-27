@@ -16,7 +16,7 @@ const ResearchPage = () => (
           title={research.title}
           text={research.text}
           details={research.details}
-          image={research.image}
+          
         />
       ))}
     </div>
