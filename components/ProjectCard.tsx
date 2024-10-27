@@ -9,7 +9,7 @@ interface Props {
   link: string;  // Add link prop
 }
 
-const ProjectCard = ({ image, title, text, link }: Props) => {
+const ProjectCard = ({  title, text, link }: Props) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {

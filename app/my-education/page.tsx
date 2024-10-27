@@ -3,12 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface EducationItem {
-  degree: string;
-  institution: string;
-  year: string;
-  description: string;
-}
+// interface EducationItem {
+//   degree: string;
+//   institution: string;
+//   year: string;
+//   description: string;
+// }
 
 // Education data
 const educationData = [
@@ -84,7 +84,7 @@ const EducationPage = () => (
             <h3 className="text-2xl font-bold mb-2">{item.degree}</h3>
             <p className="text-lg text-gray-300">{item.institution}</p>
             <p className="text-md text-gray-400 mb-2">{item.year}</p>
-            <p className="text-gray-300">{item.description}</p>
+            {/* <p className="text-gray-300">{item.description}</p> */}
           </motion.div>
         ))}
       </motion.div>
