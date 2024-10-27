@@ -1,4 +1,4 @@
-import { url } from "inspector";
+// import { url } from "inspector";
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 import { FaGraduationCap, FaFlask } from "react-icons/fa";
 
@@ -219,13 +219,13 @@ export const Researches = [
     title: "Hybrid Quantum Convolutional Neural Network Multi-Class Classification with Discarded Qubit Optimization",
     text: "Research on a hybrid quantum-classical convolutional neural network model with adaptive scaling and qubit state discard optimization.",
     details: "This ongoing research focuses on optimizing quantum resources for enhanced accuracy and computational efficiency in classification tasks. By implementing adaptive scaling and qubit discard mechanisms, the model aims to improve classification accuracy for complex medical images, such as those found in the MedMNIST dataset. The research examines hybrid architectures that combine classical and quantum components, exploring benefits in speed and resource efficiency, and seeks to establish benchmarks for quantum-enhanced image classification.",
-    image: null, // Set to null if no image is used
+    
   },
   {
     title: "Medical Report Generation and Diagnosis using Multimodal Data and Large Language Models",
     text: "Research on developing a medical report generation system integrating multimodal data with large language models.",
     details: "This research focuses on generating medical reports by synthesizing multimodal data, including patient history, physician notes, and imaging data (e.g., X-rays, MRI scans). Using large language models with integrated image processing, the system aims to enhance diagnostic accuracy and offer data-driven treatment suggestions. The goal is to create an AI-powered assistant capable of aiding medical professionals by automatically producing detailed, contextually accurate reports, which may assist in early diagnosis and provide recommendations based on recognized patterns in historical data.",
-    image: null, // Set to null if no image is used
+    
   },
 
   // Add more items similarly
